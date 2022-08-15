@@ -1,0 +1,10 @@
+<p>indian-currency works!</p>
+{{ canadianVal }}
+
+<input
+  type="text"
+  name="indian_currency"
+  (keyup)="onValueChange($event)"
+  [(ngModel)]="indian_currency"
+  #indian_currency="ngModel"
+/>
