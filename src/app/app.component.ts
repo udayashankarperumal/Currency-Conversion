@@ -6,7 +6,15 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
-  canadianVal: string;
-  indianVal: string;
+  title = 'Currency Conversion';
+  canadianVal: any;
+  indianVal: any;
+
+  receiveIndianVal($event) {
+    this.indianVal = $event;
+  }
+
+  receiveCanadianVal($event) {
+    this.canadianVal = $event;
+  }
 }

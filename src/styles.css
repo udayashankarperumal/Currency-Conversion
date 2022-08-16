@@ -1,1 +1,38 @@
 /* Add application styles & imports to this file! */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.block-element {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.block-element > div {
+  width: 45%;
+}
+
+.block-element input {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+}
+
+label {
+  font-size: 18px;
+}

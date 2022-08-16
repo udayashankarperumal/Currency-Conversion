@@ -1,2 +1,17 @@
-<hello name="{{ name }}"></hello>
-<p>Start editing to see some magic happen :)</p>
+<div class="container">
+  <h1>{{ title }}</h1>
+  <div class="block-element">
+    <div>
+      <app-canadiancurrency
+        [indianVal]="indianVal"
+        (sendCanadianVal)="receiveCanadianVal($event)"
+      ></app-canadiancurrency>
+    </div>
+    <div>
+      <app-indiancurrency
+        [canadianVal]="canadianVal"
+        (sendIndianVal)="receiveIndianVal($event)"
+      ></app-indiancurrency>
+    </div>
+  </div>
+</div>
