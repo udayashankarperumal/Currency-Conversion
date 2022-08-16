@@ -9,11 +9,4 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   canadianVal: string;
   indianVal: string;
-
-  getCanadianValue($event) {
-    this.canadianVal = $event;
-  }
-  getIndianValue($event) {
-    this.indianVal = $event;
-  }
 }
